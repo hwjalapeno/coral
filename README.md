@@ -8,5 +8,5 @@ wget -P ${DEMO_FILES}/ https://raw.githubusercontent.com/google-coral/test_data/
 wget -P ${DEMO_FILES}/ https://github.com/google-coral/test_data/raw/master/ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite
 
 edgetpu_detect_server \
---source /dev/video1:YUY2:800x600:24/1  \
+--source /dev/video1:YUY2:640x480:24/1  \
 --model ${DEMO_FILES}/ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite
